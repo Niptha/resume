@@ -1,0 +1,163 @@
+/* General Styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(120deg, #f3f4f6, #ffffff);
+    color: #333;
+}
+
+
+/* Header */
+
+.header {
+    background: #1d3557;
+    /* Dark Blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #f4a261;
+    /* Highlight */
+}
+
+
+/* Main Content */
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Profile Section */
+
+.sec1 {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.sec1 .profile-image {
+    border-radius: 50%;
+    border: 3px solid #1d3557;
+    margin-right: 20px;
+}
+
+.sec1 .text h1 {
+    color: #1d3557;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.sec1 .text p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.sec1 .text a {
+    text-decoration: none;
+    color: #1d3557;
+    font-weight: bold;
+}
+
+.sec1 .text a:hover {
+    color: #f4a261;
+}
+
+
+/* Section Styles */
+
+section {
+    margin-top: 20px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #1d3557;
+    margin-bottom: 15px;
+    border-left: 4px solid #f4a261;
+    padding-left: 10px;
+}
+
+section div,
+section ul {
+    margin-left: 15px;
+    color: #444;
+}
+
+section h3 {
+    color: #457b9d;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+section ul li,
+section div p {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+
+/* Footer */
+
+.footer {
+    background: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+    }
+    .sec1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec1 .profile-image {
+        margin: 0 0 15px 0;
+    }
+    .sec1 .text {
+        text-align: center;
+    }
+}
